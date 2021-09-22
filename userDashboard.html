@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>User Dashboard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 4.5rem;
+        }
+        .nav-style{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          color: white;
+          font-size: 40px;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .nav-style a{
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          margin: 0 0;
+        }
+        .container-style{
+          display: flex;
+          justify-content: start;
+          align-items: flex-start;
+        }
+      }
+      body{
+        background-image: url('bgimg3.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+      }
+      .user_name{
+        text-transform: capitalize;
+        font-size: 30px;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        word-spacing: 1em;
+        line-height: 1em;
+      }
+      h1{
+        margin-left: 2em;
+        font-size: 40px;
+        color: rgb(197, 228, 255);
+      }
+      .user_email{
+        margin-left: 0.5em;
+        text-transform:lowercase;
+        font-size: 30px;
+      }
+      .signout{
+        border: 1px solid black;
+        border-radius: 1em;
+        padding: 0.2em 0.5em;
+        outline: none;
+        border: none;
+      }
+      .signout:hover{
+        box-shadow:  2px 4px 10px white;
+      }
+      .skills-style{
+        margin-left: 8em;
+      }
+      @media screen and(min-width: 400px) {
+        h1{
+          font-size: 10px;
+        }
+        span{
+          font-size: 15px;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow nav-style">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+    Dashboard
+  </a>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3 signout" href="index.html">Sign out</a>
+    </div>
+  </div>
+</header>
+
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1><span>User Name: </span><label for="image" id="result-name" class="user_name"></label></h1>
+        <h1><span>Email: </span><label for="" id="result-email" class="user_email"></label></h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <h1><label for="">Skills:</label></h1>
+            <button type="button" class="btn btn-sm btn-outline-secondary skills-style">DSA</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">JAVA</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+
+    <script src="script.js"></script>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>
